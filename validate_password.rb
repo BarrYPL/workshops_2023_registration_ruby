@@ -37,7 +37,6 @@ class ValidatePassword
   end
 
   def check_for_triple_chars
-    puts @passwd
     @passwd.split('').uniq.each do |char|
       if @passwd["#{char}#{char}#{char}"]
         return false
